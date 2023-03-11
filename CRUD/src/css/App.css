@@ -1,0 +1,176 @@
+html, body, #root, .App{
+  height: 100%;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+  font-family: arial;
+}
+button{
+  cursor: pointer;
+}
+ul{
+  list-style-type: none;
+}
+nav{
+  margin-bottom: 30px;
+}
+nav a{
+  background-color: cornflowerblue;
+  padding: 10px 20px;
+}
+.page-home{
+  margin: 40px;
+}
+.post{
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 5px 5px 5px 5px #e1e1e1;
+  margin: 30px 0;
+  padding: 20px 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.post-content{
+  color:blue;
+  overflow-wrap: anywhere;
+}
+.post img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e1e1e1;
+}
+
+.page-post-new{
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+.page-post-new form{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.page-post-new form button:nth-child(2){
+  padding: 20px;
+  background-color:cornflowerblue;
+  border: none;
+}
+.btn-close{
+  position: absolute;
+  right:0;
+  top: 0;
+  background-color: red;
+  padding: 5px 7px;
+  border-radius: 5px;
+  border: none;
+}
+.page-post-new textarea{
+  resize: none;
+  width: 600px;
+  height: 200px;
+  padding: 20px 40px;
+  font-size: 21px;
+  border:1px solid #e1e1e1;
+}
+.page-post-new textarea:focus{
+  outline: none;
+}
+.post-from-edit textarea{
+  resize: none;
+  width: 600px;
+  height: 200px;
+  padding: 20px 40px;
+  font-size: 21px;
+  border:1px solid #e1e1e1;
+}
+.page-post{
+  margin: 30px;
+}
+.post-page-component{
+  padding: 0 20px;
+  height:50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px auto;
+  align-content: center;
+  justify-items: center;
+  width: 100%;
+}
+.page-post button{
+  font-weight: 700;
+  width: 120px;
+  height: 20px;
+  border: none;
+  border-radius: 0 0 5px 5px;
+}
+.post-page-component-text{
+  max-width: 100%;
+  width: 60%;
+  overflow-wrap: anywhere;
+  justify-self: start;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: rgba(255,255,255,1);
+  border: 2px solid #e1e1e1;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+  
+}
+.post-page-component-controls{
+  display: flex;
+  justify-self: flex-end;
+  gap:20px;
+  border-radius: 0px 0px 7px 7px;
+}
+.button-del{
+  background-color:crimson;
+  grid-row: 2;
+  grid-column: 1;
+}
+.button-edit{
+  background-color:cornflowerblue;
+  grid-row: 2;
+  grid-column: 2;
+}
+.post-from-edit{
+  height: 500px;
+  display: flex; 
+  flex-direction: column;
+  row-gap: 10px;
+  position: relative;
+}
+.post-from-edit img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.post-form-edit-controls{
+  display: flex;
+  justify-content: flex-end;
+}
+.post-form-edit-controls-submit{
+  background-color: cornflowerblue;
+}
+.post-form-edit-controls-return{
+  max-width: 30px;
+  max-height: 25px;
+  background-color: salmon;
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+.post-page-component-return-button{
+  justify-self: flex-start;
+}
